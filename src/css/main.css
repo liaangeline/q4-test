@@ -65,10 +65,22 @@
   display: grid;
   /* grid-template-columns: repeat(3, auto); */
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: auto;
+  /* grid-auto-rows: auto; */
   gap: 30px;
 }
 
 .reports_cover {
   max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .reports {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .reports {
+    grid-template-columns: 1fr;
+  }
 }
