@@ -32,3 +32,23 @@ var reportsWidget = {
 };
 
 reportsWidget.init();
+
+// Load more reports
+$(function(){
+    $('.reports_item').hide();
+    $('.reports_item').slice(0, 6).show(); 
+
+    if( $('.reports_item').length <= 6 ){ 
+        $('#load-more').hide();
+    }
+
+    $('#load-more').click(function(e){ 
+        e.preventDefault();
+        $('.reports_item:hidden').slice(0, 6).show();
+        console.log($('.reports_item').length);
+
+        if( $('.reports_item:hidden').length === 0 ){ 
+            $('#load-more').hide();
+        }
+    });
+});

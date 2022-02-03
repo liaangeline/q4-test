@@ -63,14 +63,29 @@
 /* Begin styling the report items here! */
 .reports {
   display: grid;
-  /* grid-template-columns: repeat(3, auto); */
   grid-template-columns: repeat(3, 1fr);
-  /* grid-auto-rows: auto; */
   gap: 30px;
 }
 
 .reports_cover {
   max-width: 100%;
+}
+
+button#load-more {
+  background: #22272B;
+  color: white;
+  border-color: white;
+  padding: 10px;
+  display: block;
+  margin: 50px auto;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+button#load-more:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
