@@ -93,9 +93,3 @@ button#load-more:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-@media screen and (max-width: 450px) {
-  .reports {
-    grid-template-columns: 1fr;
-  }
-}
