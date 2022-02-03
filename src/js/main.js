@@ -10,7 +10,7 @@ var reportsWidget = {
                     '<footer class="reports_docs">' +
                         '{{#documents}}' +
                             '<h3 class="reports_title">' +
-                                '<a href="{{url}}" target="_blank">{{title}}</a>' +
+                                '<a href="{{url}}" target="_blank">{{title}} <span>({{file_type}} {{file_size}})</span></a>' +
                             '</h3>' +
                         '{{/documents}}' +
                     '</footer>' +
